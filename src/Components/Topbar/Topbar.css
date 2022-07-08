@@ -1,0 +1,53 @@
+*{
+    font-weight: 600;
+    color: var(--darkPurple);
+}
+
+.wrapper{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    
+}
+.menu{
+    display: none;
+}
+
+.right button{
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    background-color: #282C5B;
+    border: none;
+    box-shadow: 0.699999988079071px 1px 0px 0px #33356F;
+
+}
+.right button:hover{
+    background-color: var(--gray);
+    
+
+}
+
+@media (min-width: 700px){
+    .menu{
+        display: block;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .menu ul li {
+        list-style: none;
+        cursor: pointer;
+       
+    }
+    
+}
+@media (min-width: 960px){
+    *{
+        font-size: 1.25rem;
+    }
+
+}

@@ -1,0 +1,71 @@
+.intro{
+    
+    height: 80vh;
+    display: flex;
+    padding-top: 2rem;
+}
+.animatedImg{
+    height: 80px;
+}
+#emailBtn{
+    width: 150px;
+    height: 52px;
+    background: linear-gradient(180deg, #958DFB 0%, #7A70F9 100%);
+    box-shadow: 0px 10px 25px rgba(93, 78, 135, 0.2);
+    border-radius: 10px;
+    color: var(--purple);
+    border: none;
+}
+
+.heroLeft{
+    padding: 0 30px;
+    padding-top: 25%;
+}
+@media (min-width: 700px) {
+    #standingMan{
+        height: 65vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    #standingMan{
+        height: 90vh;
+    }
+    .heroRight{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+       
+    }
+    .heroLeft{
+        
+        flex: 1;
+        flex-direction: column;
+        padding: 0 8%;
+        padding-top: 12%;
+        
+    }
+    .heroLeft h2{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--lightPurple);
+       
+        
+    }
+    #title{
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--cyan);
+    }
+    
+}
+@media (min-width: 1750px) {
+    .heroLeft{
+       
+        padding: 12% 15%;
+        
+        
+    }
+    
+    
+}
