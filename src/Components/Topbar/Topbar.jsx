@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Topbar.css"
 
 const Navbar = () => {
+
+const [isDarkMode, setDarkMode] = useState(true)
+
+const changeMode = () => {
+    setDarkMode(!isDarkMode)
+}
+
+useEffect(() => {
+    if(isDarkMode) {
+        document.documentElement.style.setProperty('--backGround', '#0F172A')
+    } else {
+        document.documentElement.style.setProperty('--backGround', '#F8FAFF')
+    }
+}, [isDarkMode])
+
+
     return (
         <div className='wrapper'>
             <div className='left'> {/* logo */}
@@ -19,8 +35,11 @@ const Navbar = () => {
                 
             </div>
             <div className='right'>
-               
-          <button>Dark Mode</button>
+            <label className="switch" >
+                <input type="checkbox"></input>
+                <span className="slider" onClick={changeMode} ></span>
+            </label>
+          
 
             </div>
         </div>
